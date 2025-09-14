@@ -1,0 +1,24 @@
+<div class="w-full lg:px-[100px] flex items-center justify-between h-[80px] shadow-sm">
+    <h2 class="font-bold">Lliffton</h2>
+    <div class="flex items-center">
+        <ul class="hidden md:flex items-center gap-5">
+            <li>Home</li>
+            <li>What We do</li>
+            <li>Contact Us</li>
+            <li>Home</li>
+        </ul>
+        <div class="md:hidden">
+            @if (sideBarShowing) {
+                <i (click)="toggleSideBar()" class="bi bi-x text-xl font-bold"></i>
+            } 
+            @else {
+                <i (click)="toggleSideBar()" class="bi bi-list text-xl font-bold"></i>
+            }
+        </div>
+    </div>
+
+    <!-- sidebar -->
+</div>
+<p-drawer header="Lliffton" [(visible)]="sideBarShowing" position="right">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consectetur.</p>
+</p-drawer>
