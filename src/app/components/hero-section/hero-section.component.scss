@@ -1,3 +1,12 @@
 #hero-section {
     height: calc(100vh - 80px);
+
+    #btns {
+        button {
+            padding: 8px 1rem;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    }
+
 }
