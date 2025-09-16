@@ -5,6 +5,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { WhoWeAreComponent } from "./components/who-we-are/who-we-are.component";
+import { PartnersComponent } from "./components/partners/partners.component";
 @Component({
   selector: 'app-root',
   imports: [
@@ -13,7 +14,8 @@ import { WhoWeAreComponent } from "./components/who-we-are/who-we-are.component"
     HeaderComponent,
     FooterComponent,
     HeroSectionComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    PartnersComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
