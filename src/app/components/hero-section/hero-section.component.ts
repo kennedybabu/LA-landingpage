@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { gsap } from 'gsap'
+import { PulseComponent } from "../pulse/pulse.component";
 
 @Component({
   selector: 'app-hero-section',
-  imports: [],
+  imports: [PulseComponent],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })
