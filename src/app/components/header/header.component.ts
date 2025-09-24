@@ -1,12 +1,14 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { DrawerModule } from 'primeng/drawer';
 import { gsap } from 'gsap';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   imports: [
-    DrawerModule
-  ],
+    DrawerModule,
+    RouterLink
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

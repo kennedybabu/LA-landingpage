@@ -2,7 +2,7 @@
     <div class="w-full p-2 lg:px-[100px] bg-[#90E0EF] py-[50px]">
         <div class="flex flex-col lg:flex-row">
             <div class="flex flex-1 flex-col items-start pb-[50px]">
-                <small>// ABOUT US</small>
+                <small class="font-bold mb-2">// ABOUT US</small>
                 <h2 class="font-bold text-5xl">What we do</h2>
             </div>
             <div class="flex flex-col flex-1">
@@ -11,41 +11,149 @@
             </div>
         </div>
     </div>
-    <div class="h-screen bg-black flex text-white flex-col lg:flex-row w-full py-[50px] p-2 lg:px-[100px]">
+
+    <section class="p-2 py-[50px] lg:px-[100px]">
+        <div class="flex flex-wrap">
+            <div class="flex-1 p-5 items-center h-full">
+                <small class="font-bold mb-2">// OUR FOCUS</small>
+                <h2 class="font-bold text-5xl mb-5">Problem</h2>
+                <p class="text-[#808080]">Smallholder farmers and rural enterprenuers in Africa face fragmented supply chains,limited market 
+                    access, low financial inclusion, and inadequate digital tools. Over 2 in 3 farmers lack access to digital 
+                    marketplaces, while women-led groups and youth entreprenuers remain excluded from finance and scalable opprtunities.
+                </p>
+            </div>
+
+            <div class="flex-1 items-center">
+                <div class="img-wrapper mx-auto">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full p-2 lg:px-[100px] py-[50px] bg-[#F5F5F5]">
+        <small class="font-bold">// OUR SERVICES</small>
+        <h2 class="font-bold text-4xl mb-5">Services Offered</h2>
+        <div id="services" class="w-full flex flex-wrap justify-center">
+            <div class="p-2 w-full md:w-1/2 lg:w-1/3 flex gap-4">
+                <div>
+                    <i class="bi bi-phone text-2xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold">Digital financial inclusion</p>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+            <div class="p-2 w-full md:w-1/2 lg:w-1/3 flex gap-5">
+                <div>
+                    <i class="bi bi-shop-window text-2xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold">Agro-input and aggregation e-commerce</p>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+            <div class="p-2 w-full md:w-1/2 lg:w-1/3 flex gap-5">
+                <div>
+                    <i class="bi bi-headset text-2xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold">Farmer advisory services</p>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+            <div class="p-2 w-full md:w-1/2 lg:w-1/3 flex gap-5">
+                <div>
+                    <i class="bi bi-journal-bookmark-fill text-2xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold">Knowledge platforms</p>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+            <div class="p-2 w-full md:w-1/2 lg:w-1/3 flex gap-4">
+                <div>
+                    <i class="bi bi-graph-up-arrow text-2xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold">Impact analytics dashboards</p>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen bg-black flex text-white flex-col lg:flex-row w-full py-[50px] p-2 lg:px-[100px]">
         <div class="flex-1 mb-5 lg:mb-0 flex justify-center flex-col">
             <div class="flex flex-col">
                 <small class="text-[#8dc32e]">// WHAT WE OFFER</small>
-                <h2 class="font-bold text-6xl mb-5 text-[#8dc32e]">Focus Areas</h2>
-            </div>
-            <div>
-                <ul>
-                    <li class="flex gap-2"><i class="bi bi-check-circle-fill text-[#8dc32e]"></i>Empowering smallholder farmers</li>
-                    <li class="flex gap-2"><i class="bi bi-check-circle-fill text-[#8dc32e]"></i>Youth Employability</li>
-                    <li class="flex gap-2"><i class="bi bi-check-circle-fill text-[#8dc32e]"></i>Digital transformation for communities</li>
-                </ul>
+                <h2 class="font-bold text-6xl mb-5 text-[#8dc32e]">Our Solution</h2>
+                <p style="max-width: 700px;">Lliffton Analytica has developed a one-stop digital platform that intergrates agriculture, finance, and digital jobs to transform rural economies.</p>
             </div>
         </div>
         <div class="flex-1  flex items-center justify-center">
-            <div class="grid grid-cols-4 grid-rows-6 gap-2 w-full">
-                <div class="col-span-2 row-span-6">
-                    <div class="card">
+            <div class="grid grid-cols-6 grid-rows-6 gap-2 w-full">
+                <div class="col-span-2 row-span-3 col-start-2">
+                    <div (click)="viewProject()" class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <h2>VSLA Digitization and Agri-Trade</h2>
+                                <h2>Agri-Trade App</h2>
                                 <span>01</span>
                             </div>
                             <div class="card-back">
-                                <small>A Kenyan-based social enterprise whose focus is the development of digital solutions for the agriculture, health and WASH sectors in Kenya and Africa at large.</small>
-                                <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i><span>view more</span></a>
+                                <small>Real-time marketplace for inputs, services (e.g., mechanization, soil testing), and aggregation.</small>
+                                <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                                <span>01</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-span-3 col-start-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, magnam?</div>
-                <div class="row-span-3 col-start-3 row-start-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, sint?</div>
-                <div class="row-span-3 col-start-4 row-start-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, totam!</div>
-                <div class="row-span-3 col-start-4 row-start-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, asperiores.</div>
+                <div class="col-span-2 row-span-3 col-start-4">
+                      <div (click)="viewProject()" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>VSLA Digitization</h2>
+                                <span>02</span>
+                            </div>
+                            <div class="card-back">
+                                <small>End-to-end savings group mangament linked to mobile money</small>
+                                <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                                <span>02</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 row-span-3 col-start-2 row-start-4">
+                      <div (click)="viewProject()" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Market Infromation System (MIS)</h2>
+                                <span>03</span>
+                            </div>
+                            <div class="card-back">
+                                <small>Data Driven insights on 48 value chains with AI projections</small>
+                                <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                                <span>03</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 row-span-3 col-start-4 row-start-4">
+                    <div (click)="viewProject()" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>E-group & Digital Jobs Platform</h2>
+                                <span>04</span>
+                            </div>
+                            <div class="card-back">
+                                <small>Unlocking e-commerce opportunities and remote youth</small>
+                                <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                                <span>04</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </div>

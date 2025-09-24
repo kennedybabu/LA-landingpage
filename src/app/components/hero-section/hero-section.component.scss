@@ -1,6 +1,10 @@
 #hero-section {
     height: calc(100vh - 80px);
 
+    p {
+        color: tomato;
+    }
+
     #btns {
         button {
             padding: 8px 1rem;

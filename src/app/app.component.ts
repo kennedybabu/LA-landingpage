@@ -9,13 +9,13 @@ import { PartnersComponent } from "./components/partners/partners.component";
 @Component({
   selector: 'app-root',
   imports: [
-    // RouterOutlet, 
+    RouterOutlet, 
     ButtonModule,
     HeaderComponent,
     FooterComponent,
-    HeroSectionComponent,
-    WhoWeAreComponent,
-    PartnersComponent
+    // HeroSectionComponent,
+    // WhoWeAreComponent,
+    // PartnersComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
