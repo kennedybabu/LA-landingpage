@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { CountUpModule } from 'ngx-countup'
 
 @Component({
   selector: 'app-vsla',
-  imports: [],
+  imports: [
+    CountUpModule
+  ],
   templateUrl: './vsla.component.html',
   styleUrl: './vsla.component.scss'
 })
