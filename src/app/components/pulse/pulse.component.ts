@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pulse',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './pulse.component.scss'
 })
 export class PulseComponent {
+  text = input.required<string>();
 
 }

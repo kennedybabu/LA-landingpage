@@ -9,6 +9,22 @@ div {
         }
     }
 
+    .grid-temp {
+        .image-container {
+            background-size: cover;
+            background-position: center;            
+        }
+
+        .one {
+            background-color: red;
+            background-image: url("../../../../public/community_farmers.jpg");
+        }
+
+        .two {
+            background-image: url("../../../../public/maize.jpg");
+        }
+    }
+
     #services > div {
         height: 100px;
         cursor: pointer;
@@ -21,8 +37,83 @@ div {
         }
     }
 
+    #objectives {
+        color: whitesmoke;
 
-    .flex-1 {
+
+        .objective-card {
+            width: 270px;
+            height: 299px;
+            padding: 43px 30px 65px;
+            position: relative;
+            overflow: hidden;
+            background-color: #262051;
+
+            transition: all ease .4s;
+
+            .top,
+            .bottom,
+            .icon,
+            .bi {
+                position: absolute;
+            }
+
+            .top {
+                top: -38px;
+                left: 0;
+                font-weight: bold;
+                font-size: 100px;
+                opacity: .2;
+            }
+
+            .bottom {
+                top: 65%;
+                left: 65%;
+                width: 188px;
+                height: 188px;
+                border-radius: 100%;
+                background-color: rgba(245, 245, 245, 0.122);
+            }
+
+            .bi {
+                right: 1rem;
+                bottom: 1rem;
+            }
+
+            h3 {
+                font-weight: bold;
+            }
+
+            &:hover {
+                background-color: rgb(240, 240, 240);
+                cursor: pointer;
+
+                h3 {
+                    color: black;
+                }
+
+                small {
+                    color: #797979;
+                }
+
+                .top {
+                    color: rgb(72, 72, 72);
+                }
+
+                .bottom {
+                    background-color: #128dd4;
+                }
+            }
+
+
+
+        }
+
+    }
+
+
+    .flex-1,
+    .flex-2 {
         .grid {
             .row-span-3,
             .col-span-2 {

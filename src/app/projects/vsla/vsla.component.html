@@ -3,14 +3,24 @@
         <h2 class="text-white text-4xl font-bold">VSLA Digitization and Agri-Trade</h2>
     </div>
 
-    <section class="w-full p-2 h-screen py-[50px] lg:px-[100px]">
-        <small class="font-bold mb-2">// WHO WE ARE</small>
-        <h2 class="font-bold text-3xl mb-4">What we do</h2>
-        <div class="w-full">
-            <p>We are a Kenyan-based social enterprise developing digital solution for Agriculture, Health, and WASH</p>
+    <section class="w-full p-2 h-full py-[30px] lg:px-[100px]">
+        <div class="w-full flex flex-wrap items-center">
+            <div class="w-full md:flex-1 stay-card py-[50px]">
+                <small class="font-bold mb-2">// WHO WE ARE</small>
+                <h2 class="font-bold text-3xl mb-4">What we do</h2>
+                <p>We are a Kenyan-based social enterprise developing digital solution for Agriculture, Health, and WASH</p>
+                <app-pulse text="Request Demo"></app-pulse>
+            </div>
+            <div class="w-full md:flex-1 scroll-cards">
+                <div class="img-wrapper">
+                    <img src="mama.jpg" alt="" id="top">
+                    <img src="farm.jpg" alt="" id="middle">
+                    <img src="planting.jpg" alt="" id="bottom">
+                </div>
+            </div>
         </div>
-        <div>
-            <small class="text-[#8dc32e]">// OUR FOCUS AREAS</small>
+        <div class="mt-10 md:mt-0 py-[50px]">
+            <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR FOCUS AREAS</small>
             <div>
                 <ul>
                     <li>Empowering smallholder farmers</li>
@@ -50,7 +60,7 @@
             </div>
             <div class="bg-[#f8f8f8] item flex items-end p-8 w-full md:w-1/2 lg:w-1/4 order-2">
                 <div class="flex items-center flex-col">
-                    <h2 class="text-4xl text-[#43baff] font-bold">15+</h2>
+                    <h2 [countUp]="20" [options]="{ enableScrollSpy: true }" class="text-4xl text-[#43baff] font-bold">0+</h2>
                     <h3 class="text-2xl font-bold">Countries Worldwide</h3>
                     <p class="text-[#6d6d6d] mb-[20px]">To succeed, every software solution must be deeply intergrated into the existing tech environment...</p>
                     <a href="#" class="text-[#43baff] font-bold"><i class="bi bi-arrow-right mr-2"></i>Learn more</a>
@@ -61,7 +71,7 @@
             </div>
             <div class="bg-[#f8f8f8] item flex items-end p-8 w-full md:w-1/2 lg:w-1/4 order-4 md:order-3 lg:order-4">
                 <div class="flex items-center flex-col">
-                    <h2 class="text-4xl text-[#43baff] font-bold">15+</h2>
+                    <h2 [countUp]="15" [options]="{ enableScrollSpy: true }" class="text-4xl text-[#43baff] font-bold">0</h2>
                     <h3 class="text-2xl font-bold">Countries Worldwide</h3>
                     <p class="text-[#6d6d6d]">To succeed, every software solution must be deeply intergrated into the existing tech environment...</p>
                     <a href="#" class="text-[#43baff] font-bold"><i class="bi bi-arrow-right mr-2"></i>Learn more</a>

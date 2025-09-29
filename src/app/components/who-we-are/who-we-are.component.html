@@ -1,13 +1,26 @@
 <div class="w-full">
-    <div class="w-full p-2 lg:px-[100px] bg-[#90E0EF] py-[50px]">
+    <div class="w-full grid-temp p-2 lg:px-[100px] bg-[#90E0EF] py-[50px]">
         <div class="flex flex-col lg:flex-row">
             <div class="flex flex-1 flex-col items-start pb-[50px]">
-                <small class="font-bold mb-2">// ABOUT US</small>
-                <h2 class="font-bold text-5xl">What we do</h2>
+                <div class="w-full md:w-[80%] mx-auto h-[400px] img-container one"></div>
             </div>
             <div class="flex flex-col flex-1">
-                <p class="text-[#808080] mb-2">We are a Kenyan based social enterprise developing digital solutions for Agriculture, Health and WASH sectors in Kenya and Africa at large.</p>
-                <p class="text-[#808080]">The company's core business revolves around agriculture, health and the WASH value chain working towards empowering the African enterprises in these sectors</p>
+                <small class="font-bold mb-2">// ABOUT US</small>
+                <h2 class="font-bold text-5xl">What we do</h2>
+                <p style="line-height: 2rem;" class="text-[#808080] mb-2">We are a Kenyan based social enterprise developing digital solutions for Agriculture, Health and WASH sectors in Kenya and Africa at large.</p>
+                <p style="line-height: 2rem;" class="text-[#808080]">The company's core business revolves around agriculture, health and the WASH value chain working towards empowering the African enterprises in these sectors</p>
+            </div>      
+        </div>
+        <div class="flex flex-wrap my-3">
+            <div class="flex w-full md:flex-1 flex-col items-start pb-[50px]">
+                <small class="font-bold mb-2">// OUR</small>
+                <h2 class="font-bold text-5xl">Mission</h2>
+                <p style="max-width: 600px;line-height: 2rem;">To empower farmers, women, and youth in Africa through inclusive digital solutions that intergrates finance,
+                    markets, and Knowledge - driving sustainable livelihoods, financial inlcusion, and community resilience.
+                </p>
+            </div>
+            <div class="flex w-full md:flex-1 ">
+                <div class="w-full md:w-[80%] mx-auto  h-[400px] img-container two"></div>
             </div>
         </div>
     </div>
@@ -83,6 +96,59 @@
         </div>
     </section>
 
+    <section id="objectives" class="bg-[#221f3c] p-2 lg:px-[100px] py-[50px]">
+        <small class="font-bold">// WHY US</small>
+        <h2 class="font-bold text-6xl mb-5 text-[#8dc32e]">Our Objectives</h2>
+        <div class="w-full p-2 flex justify-center gap-5 lg:px-[150px] flex-wrap gap-3">
+            <div class="w-full objective-card p-3">
+                <h3>Digitize Savings & Finance</h3>
+                <small>Expand access to secure, transparent, and affordable financial services through VSLA 
+                    digitization and intergration with mobile money and banks
+                </small>
+                <span class="top">01</span>
+                <div class="bottom"></div>
+                <div class="icon"></div>
+                <i class="bi bi-phone text-3xl"></i>
+            </div>
+
+            <div class="w-full objective-card p-3">
+                <h3>Improve Market Access</h3>
+                <small>Link smallholders and rural entrepreneurs directly to input suppliers, buyers, and aggregation markets via digital platforms.</small>
+                <span class="top">02</span>
+                <div class="bottom"></div>
+                <div class="icon"></div>
+                <i class="bi bi-shop text-3xl"></i>
+            </div>
+
+            <div class="w-full objective-card p-3">
+                <h3>Strengthen knowledge & Skills</h3>
+                <small>Provide offline and online learning through NOVA BOX and e-learning platforms to build capacity and create digital jobs.</small> 
+                <span class="top">03</span>
+                <div class="bottom"></div>
+                <div class="icon"></div>
+                <i class="bi bi-journal-arrow-up text-3xl"></i>
+            </div>
+
+            <div class="w-full objective-card p-3">
+                <h3>Leverage Data & Innovation</h3>
+                <small>Use AI-powered MIS to generate insights on value chains, prices, and performance for better decision-making.</small> 
+                <span class="top">04</span>
+                <div class="bottom"></div>
+                <div class="icon"></div> 
+                <i class="bi bi-file-earmark-bar-graph text-3xl"></i>
+            </div>
+
+            <div class="w-full objective-card p-3">
+                <h3>Scale Impact</h3>
+                <small>Expand operations across Africa, Asia, and Latin America to reach millions of farmers and entrepreneurs, promoting inclusive growth and resilience</small> 
+                <span class="top">05</span>
+                <div class="bottom"></div>
+                <div class="icon"></div> 
+                <i class="bi bi-sort-up-alt text-3xl"></i>
+            </div>
+        </div>
+    </section>
+
     <section class="h-screen bg-black flex text-white flex-col lg:flex-row w-full py-[50px] p-2 lg:px-[100px]">
         <div class="flex-1 mb-5 lg:mb-0 flex justify-center flex-col">
             <div class="flex flex-col">
@@ -91,7 +157,7 @@
                 <p style="max-width: 700px;">Lliffton Analytica has developed a one-stop digital platform that intergrates agriculture, finance, and digital jobs to transform rural economies.</p>
             </div>
         </div>
-        <div class="flex-1  flex items-center justify-center">
+        <div class="flex-2 flex items-center justify-center">
             <div class="grid grid-cols-6 grid-rows-6 gap-2 w-full">
                 <div class="col-span-2 row-span-3 col-start-2">
                     <div (click)="viewProject()" class="card">
