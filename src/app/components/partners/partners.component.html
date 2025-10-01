@@ -1,6 +1,13 @@
 <div class="w-full p-2 lg:px-[100px] py-[50px] bg-[#F5F5F5]">
     <h2 class="font-bold text-4xl mb-5 text-[#808080]">Our Partners</h2>
-    <div class="w-full">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum eveniet, voluptatibus laboriosam accusamus soluta? Veritatis porro voluptatibus sequi mollitia animi!</p>
+    <div class="w-full py-[40px]">
+        <p-carousel [value]="icons" [numVisible]="4" [numScroll]="1" [circular]="true" autoplayInterval="3000">
+            <ng-template let-icon #item>
+                <div class="h-[100px] p-4 w-[300px] border border-surface-200 flex items-center">
+                    {{ icon.title }}
+                    <small class="mx-3 font-bold">title</small>
+                </div>
+            </ng-template>
+        </p-carousel>
     </div>
 </div>
