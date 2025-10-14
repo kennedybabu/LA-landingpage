@@ -10,8 +10,8 @@ import { Component, inject } from '@angular/core';
 export class WhoWeAreComponent {
   private router = inject(Router)
 
-  viewProject() {
-    this.router.navigate(['/vsla'])
+  viewProject(route: any) {
+    this.router.navigate([route])
   }
 
 }

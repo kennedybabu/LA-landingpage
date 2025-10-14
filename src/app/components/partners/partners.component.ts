@@ -11,22 +11,22 @@ import { Carousel } from 'primeng/carousel'
 export class PartnersComponent {
   icons: any[] = [
     {
-      "title": 1
+      "image": "africa-harvest.png"
     },
-     {
-      "title": 2
+    {
+      "image": "action.png"
     },
-     {
-      "title": 3
+    {
+      "image": "cga.png"
     },
-     {
-      "title": 4
+    {
+      "image": "rti.png"
     },
-     {
-      "title": 5
+    {
+      "image": "sana.png"
     },
-     {
-      "title": 6
+    {
+      "image": "stckr.png"
     }
   ]
 

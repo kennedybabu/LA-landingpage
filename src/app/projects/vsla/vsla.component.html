@@ -1,6 +1,6 @@
 <div class="w-full wrapper">
     <div class="banner flex items-center p-2 lg:px-[100px] h-[350px] w-full">
-        <h2 class="text-white text-4xl font-bold">VSLA Digitization and Agri-Trade</h2>
+        <h2 class="text-white text-4xl font-bold">VSLA Digitization</h2>
     </div>
 
     <section class="w-full p-2 h-full py-[30px] lg:px-[100px]">
@@ -9,7 +9,12 @@
                 <small class="font-bold mb-2">// WHO WE ARE</small>
                 <h2 class="font-bold text-3xl mb-4">What we do</h2>
                 <p>We are a Kenyan-based social enterprise developing digital solution for Agriculture, Health, and WASH</p>
-                <app-pulse text="Request Demo"></app-pulse>
+                <p>End-to-end digitization of Village Savings and Loan Associations (VSLAs). Enhance transparency, security,and access to finance for groups</p>
+                <!-- <app-pulse text="Request Demo"></app-pulse> -->
+                <button (click)="showDialog()" class="py-3 px-5 border border-2 hover:cursor-pointer">Request Demo</button>
+                <p-dialog [(visible)]="visible" [modal]="true" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+                    <app-mail></app-mail>
+                </p-dialog>
             </div>
             <div class="w-full md:flex-1 scroll-cards">
                 <div class="img-wrapper">
@@ -19,15 +24,22 @@
                 </div>
             </div>
         </div>
-        <div class="mt-10 md:mt-0 py-[50px]">
-            <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR FOCUS AREAS</small>
-            <div>
-                <ul>
-                    <li class="my-2">Empowering smallholder farmers</li>
-                    <li class="my-2">Youth employability</li>
-                    <li class="my-2">Digital transformation for communities</li>
-                </ul>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2">
+                
             </div>
+            <div class="w-full md:w-1/2">
+                <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR FOCUS AREAS</small>
+                <div>
+                    <ul>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Empowering smallholder farmers</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Youth employability</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Digital transformation for communities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 md:mt-0 py-[50px]">       
             <div class="w-full flex flex-wrap py-[50px]">
                 <div class="w-full md:w-1/2 lg:w-1/4 text-center">
                     <h2 [countUp]="86000" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>

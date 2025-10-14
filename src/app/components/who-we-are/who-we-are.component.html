@@ -7,8 +7,15 @@
             <div class="flex flex-col flex-1">
                 <small class="font-bold mb-2">// ABOUT US</small>
                 <h2 class="font-bold text-5xl">What we do</h2>
-                <p style="line-height: 2rem;" class="text-[#808080] mb-2">We are a Kenyan based social enterprise developing digital solutions for Agriculture, Health and WASH sectors in Kenya and Africa at large.</p>
-                <p style="line-height: 2rem;" class="text-[#808080]">The company's core business revolves around agriculture, health and the WASH value chain working towards empowering the African enterprises in these sectors</p>
+                <p style="line-height: 2rem;" class="text-[#808080] mb-2">
+                    We are a Kenyan-based social enterprise transforming <span>agriculture and rural livelihoods</span> 
+                    through digital-innovation, digitizing VSLAs, connecting farmers to markets with the Agri-Trade platform, 
+                    and delivering knowledge via <span>NOVA BOX</span>
+                </p>
+                <p style="line-height: 2rem;" class="text-[#808080]">
+                    Our <span>MIS for value chains</span> provides real-time data, enabling farmers, women, and youth to access finance, markets, and 
+                    skills. Driving sustainable growth and resilience across Africa's agricultural sector.
+                </p>
             </div>      
         </div>
         <div class="flex flex-wrap my-3">
@@ -160,7 +167,7 @@
         <div class="flex-2 flex items-center justify-center">
             <div class="grid grid-cols-6 grid-rows-6 gap-2 w-full">
                 <div class="col-span-2 row-span-3 col-start-2">
-                    <div (click)="viewProject()" class="card">
+                    <div (click)="viewProject('/agri-trade')" class="card">
                         <div class="card-inner">
                             <div class="card-front">
                                 <h2>Agri-Trade App</h2>
@@ -175,9 +182,9 @@
                     </div>
                 </div>
                 <div class="col-span-2 row-span-3 col-start-4">
-                      <div (click)="viewProject()" class="card">
+                      <div (click)="viewProject('/vsla')" class="card">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front two">
                                 <h2>VSLA Digitization</h2>
                                 <span>02</span>
                             </div>
@@ -190,9 +197,9 @@
                     </div>
                 </div>
                 <div class="col-span-2 row-span-3 col-start-2 row-start-4">
-                      <div (click)="viewProject()" class="card">
+                      <div (click)="viewProject('/mis')" class="card">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front three">
                                 <h2>Market Infromation System (MIS)</h2>
                                 <span>03</span>
                             </div>
@@ -205,9 +212,9 @@
                     </div>
                 </div>
                 <div class="col-span-2 row-span-3 col-start-4 row-start-4">
-                    <div (click)="viewProject()" class="card">
+                    <div (click)="viewProject('/e-group')" class="card">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front four">
                                 <h2>E-group & Digital Jobs Platform</h2>
                                 <span>04</span>
                             </div>

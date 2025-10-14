@@ -1,8 +1,8 @@
 .wrapper {
-    .banner {
-        background-image: url("../../../assets/banner.jpg");
-        background-size: cover;
-    }
+    // .banner {
+    //     background-image: url("../../../assets/banner.jpg");
+    //     background-size: cover;
+    // }
 
     section {
         .item {
@@ -35,6 +35,12 @@
 
             p {
                 max-width: 600px;
+            }
+
+            ul {
+                li {
+                    
+                }
             }
         }
 

@@ -1,7 +1,9 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { CountUpModule } from 'ngx-countup'
-import { PulseComponent } from "../../components/pulse/pulse.component";
 import { gsap } from 'gsap'
+import { Dialog } from 'primeng/dialog';
+import { MailComponent } from "../../components/mail/mail.component";
+
 
 
 
@@ -9,12 +11,19 @@ import { gsap } from 'gsap'
   selector: 'app-vsla',
   imports: [
     CountUpModule,
-    PulseComponent
+    Dialog,
+    MailComponent
 ],
   templateUrl: './vsla.component.html',
   styleUrl: './vsla.component.scss'
 })
 export class VslaComponent implements OnInit, AfterViewInit {
+
+  visible: boolean = false 
+
+  showDialog() {
+    this.visible = true
+  }
 
   ngOnInit(): void {
     window.scrollTo(0,0);
@@ -42,7 +51,7 @@ export class VslaComponent implements OnInit, AfterViewInit {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".stay-card",
-        start: "top 70%",
+        start: "top 50%",
         end: "bottom 10%",
         scrub: 2,
         pin: true, 
@@ -58,9 +67,7 @@ export class VslaComponent implements OnInit, AfterViewInit {
       duration: 1,
       stagger: .5,
       ease: "sine.out",
-    }, ">+3")
-
-    
+    }, ">+3")    
   }
 
 }

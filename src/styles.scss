@@ -9,4 +9,11 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+
+  .wrapper {
+    .banner {
+        background-image: url("./assets/banner.jpg");
+        background-size: cover;
+    }
+  }
 }

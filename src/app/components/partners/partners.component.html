@@ -3,9 +3,10 @@
     <div class="w-full py-[40px]">
         <p-carousel [value]="icons" [numVisible]="4" [numScroll]="1" [circular]="true" autoplayInterval="3000">
             <ng-template let-icon #item>
-                <div class="h-[100px] p-4 w-[300px] border border-surface-200 flex items-center">
-                    {{ icon.title }}
-                    <small class="mx-3 font-bold">title</small>
+                <div class="h-[70px] p-4 w-[200px] flex items-center">
+                    <!-- {{ icon.title }}
+                    <small class="mx-3 font-bold">title</small> -->
+                    <img [src]="icon.image" alt="photo">
                 </div>
             </ng-template>
         </p-carousel>
