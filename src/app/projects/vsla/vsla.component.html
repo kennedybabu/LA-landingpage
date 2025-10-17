@@ -1,16 +1,18 @@
 <div class="w-full wrapper">
-    <div class="banner flex items-center p-2 lg:px-[100px] h-[350px] w-full">
-        <h2 class="text-white text-4xl font-bold">VSLA Digitization</h2>
+    <div class="banner text-white flex flex-col justify-center p-2 lg:px-[100px] h-[350px] w-full">
+        <h2 class="text-4xl font-bold mb-3">VSLA Digital Platform</h2>
+        <small class="font-bold mb-2">Secure, Transparent, and Accessible Financial Services for Rural Communities.</small>
     </div>
 
-    <section class="w-full p-2 h-full py-[30px] lg:px-[100px]">
+    <section class="w-full p-2 h-auto py-[30px] lg:px-[100px]">
         <div class="w-full flex flex-wrap items-center">
             <div class="w-full md:flex-1 stay-card py-[50px]">
                 <small class="font-bold mb-2">// WHO WE ARE</small>
                 <h2 class="font-bold text-3xl mb-4">What we do</h2>
-                <p>We are a Kenyan-based social enterprise developing digital solution for Agriculture, Health, and WASH</p>
-                <p>End-to-end digitization of Village Savings and Loan Associations (VSLAs). Enhance transparency, security,and access to finance for groups</p>
-                <!-- <app-pulse text="Request Demo"></app-pulse> -->
+                <p>Village Savings and Loan Associations (VSLAs) are community-based financial groups where members pool savings and provide loans to each other. Traditionally managed with physical cash, lockboxes, and paper records.</p>
+                <p>Our digital VSLA platform transforms these groups with secure, transparent, and efficient digital financial management.</p>
+                <p>Members access their accounts via mobile phones, track transactions in real-time, and build formal credit histories that unlock access to banks, MFIs, and insurance products.</p>
+                <p>he platform integrates with mobile money (M-Pesa, Airtel Money) and formal banking systems, creating a bridge between informal community finance and the formal financial sector.</p>
                 <button (click)="showDialog()" class="py-3 px-5 border border-2 hover:cursor-pointer">Request Demo</button>
                 <p-dialog [(visible)]="visible" [modal]="true" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
                     <app-mail></app-mail>
@@ -24,56 +26,112 @@
                 </div>
             </div>
         </div>
+       
         <div class="flex flex-wrap">
             <div class="w-full md:w-1/2">
                 
             </div>
             <div class="w-full md:w-1/2">
-                <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR FOCUS AREAS</small>
-                <div>
+                <!-- <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR FOCUS AREAS</small> -->
+                <!-- <div>
                     <ul>
                         <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Empowering smallholder farmers</li>
                         <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Youth employability</li>
                         <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Digital transformation for communities</li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
+        <section class="w-full p-2">
+            <div class="top flex flex-wrap gap-2 my-5">
+                <div class="w-full md:flex-2 left flex items-center justify-center">
+                    <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR FOCUS AREAS</small>
+                </div>
+                <div class="w-full md:flex-4 right">
+                    <div class="h-full flex items-center">
+                        <ul class="font-bold">
+                            <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Empowering smallholder farmers</li>
+                            <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Youth employability</li>
+                            <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Digital transformation for communities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           <div class="top flex flex-wrap md:flex-nowrap gap-5">
+                <div class="w-full md:flex-4 md:w-auto right flex items-center">
+                    <ul class="font-bold">
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Eliminate risks of theft, loss, or mismanagement of physical cash</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Build formal credit histories that unlock bank loans and mortgages</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Access larger loan amounts as groups demonstrate creditworthiness</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Increase savings discipline through mobile money automation</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Save time with automated calculations and digital records</li>
+                        <li class="my-5"><i class="bi bi-arrow-right-circle mr-3"></i>Women gain financial independence with private digital accounts</li>
+                    </ul>                
+                </div>
+                <div class="w-full md:flex-2 md:w-auto left flex items-center justify-center">
+                    <small class="text-[#8dc32e] mb-3 text-2xl font-bold">// OUR BENEFITS</small>
+                </div>
+            </div>
+        </section>
         <div class="mt-2 md:mt-0 py-[50px]">       
             <div class="w-full flex flex-wrap py-[50px]">
                 <div class="w-full md:w-1/2 lg:w-1/4 text-center">
-                    <h2 [countUp]="86000" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
-                    <p class="font-bold">Farmers</p>
+                    <h2 [countUp]="4" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
+                    <p class="font-bold">Savings Mobilizied (2 years)</p>
                 </div>
 
                 <div class="w-full md:w-1/2 lg:w-1/4 text-center">
-                    <h2 [countUp]="16000" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
-                    <p class="font-bold">Rural Entrepreneurs</p>
+                    <h2 [countUp]="1312" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
+                    <p class="font-bold">Active Groups</p>
                 </div>
 
                 <div class="w-full md:w-1/2 lg:w-1/4 text-center">
-                    <h2 [countUp]="1250" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
-                    <p class="font-bold">Youths</p>
+                    <h2 [countUp]="32800" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
+                    <p class="font-bold">Members (Farmers)</p>
                 </div>
 
                 <div class="w-full md:w-1/2 lg:w-1/4 text-center">
-                    <h2 [countUp]="624" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0</h2>
-                    <p class="font-bold">Women</p>
+                    <h2 [countUp]="800" [options]="{ enableScrollSpy: true }" class="font-bold text-[#43baff] text-3xl">0 K+</h2>
+                    <p class="font-bold">SACCO Deposits Managed</p>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="w-full">
+    <div class="w-full mb-8 banner-bottom">
+            <div class="overlay flex flex-col items-center justify-center text-white">
+                <small class="font-bold">// Drop Us a line!</small>
+                <h2 class="font-bold text-3xl my-3">NEED A CONSULTATION?</h2>
+                <button (click)="showDialog()" class="py-3 px-5 border border-2 hover:cursor-pointer hover:bg-white hover:text-black hover:border-white">Request Demo</button>
+            </div>
+    </div>
+    
+    <section class="w-full flex flex-col md:flex-row py-[30px] lg:px-[100px]">
+        <div class="w-full md:w-1/3 p-2 py-[30px]">
+            <small class="font-bold mb-2">// CURIOUS?</small>
+            <h2 class="font-bold text-3xl mb-4">How it works</h2>
+        </div>
+
+        <div class="w-full md:w-2/3 py-[30px]">
+            <p-timeline [value]="events" class="w-full" align="left">
+                <ng-template #content let-event>
+                    <h3 class="font-bold">{{ event.title }}</h3>
+                    <small>{{ event.subText }}</small>
+                </ng-template>
+            </p-timeline>
+        </div>
+    </section>
+
+    <section class="w-full mt-5">
         <div class="w-full flex flex-wrap">
             <div class="item team w-full md:w-1/2 lg:w-1/4 order-1">
 
             </div>
             <div class="bg-[#f8f8f8] item flex items-end p-8 w-full md:w-1/2 lg:w-1/4 order-2">
-                <div class="flex items-center flex-col">
-                    <h2 [countUp]="20" [options]="{ enableScrollSpy: true }" class="text-4xl text-[#43baff] font-bold">0+</h2>
-                    <h3 class="text-2xl font-bold">Countries Worldwide</h3>
+                <div class="flex items-center flex-col text-center">
+                    <h2 [countUp]="48" [options]="{ enableScrollSpy: true }" class="text-4xl text-[#43baff] font-bold">0+</h2>
+                    <h3 class="text-2xl font-bold">Avg. Transactions/Member</h3>
                     <p class="text-[#6d6d6d] mb-[20px]">To succeed, every software solution must be deeply intergrated into the existing tech environment...</p>
                     <a href="#" class="text-[#43baff] font-bold"><i class="bi bi-arrow-right mr-2"></i>Learn more</a>
                 </div>            
@@ -82,9 +140,9 @@
 
             </div>
             <div class="bg-[#f8f8f8] item flex items-end p-8 w-full md:w-1/2 lg:w-1/4 order-4 md:order-3 lg:order-4">
-                <div class="flex items-center flex-col">
-                    <h2 [countUp]="15" [options]="{ enableScrollSpy: true }" class="text-4xl text-[#43baff] font-bold">0</h2>
-                    <h3 class="text-2xl font-bold">Countries Worldwide</h3>
+                <div class="flex items-center flex-col text-center">
+                    <h2 [countUp]="95" [options]="{ enableScrollSpy: true }" class="text-4xl text-[#43baff] font-bold">0</h2>
+                    <h3 class="text-2xl font-bold">Loan Repayment</h3>
                     <p class="text-[#6d6d6d]">To succeed, every software solution must be deeply intergrated into the existing tech environment...</p>
                     <a href="#" class="text-[#43baff] font-bold"><i class="bi bi-arrow-right mr-2"></i>Learn more</a>
                 </div>   
