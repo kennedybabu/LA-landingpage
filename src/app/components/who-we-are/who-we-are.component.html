@@ -1,5 +1,5 @@
 <div class="w-full">
-    <div class="w-full grid-temp p-2 lg:px-[100px] bg-[#90E0EF] py-[50px]">
+    <div class="w-full grid-temp p-2 lg:px-[100px] py-[50px]">
         <div class="flex flex-col lg:flex-row">
             <div class="flex flex-1 flex-col items-start pb-[50px]">
                 <div class="w-full md:w-[80%] mx-auto h-[400px] img-container one"></div>
@@ -7,12 +7,12 @@
             <div class="flex flex-col flex-1">
                 <small class="font-bold mb-2">// ABOUT US</small>
                 <h2 class="font-bold text-5xl">What we do</h2>
-                <p style="line-height: 2rem;" class="text-[#808080] mb-2">
+                <p style="line-height: 2rem;" class="mb-2">
                     We are a Kenyan-based social enterprise transforming <span>agriculture and rural livelihoods</span> 
                     through digital-innovation, digitizing VSLAs, connecting farmers to markets with the Agri-Trade platform, 
                     and delivering knowledge via <span>NOVA BOX</span>
                 </p>
-                <p style="line-height: 2rem;" class="text-[#808080]">
+                <p style="line-height: 2rem;" class="">
                     Our <span>MIS for value chains</span> provides real-time data, enabling farmers, women, and youth to access finance, markets, and 
                     skills. Driving sustainable growth and resilience across Africa's agricultural sector.
                 </p>
@@ -37,7 +37,7 @@
             <div class="flex-1 p-5 items-center h-full">
                 <small class="font-bold mb-2">// OUR FOCUS</small>
                 <h2 class="font-bold text-5xl mb-5">Problem</h2>
-                <p class="text-[#808080]">Smallholder farmers and rural enterprenuers in Africa face fragmented supply chains,limited market 
+                <p style="line-height: 2rem;">Smallholder farmers and rural enterprenuers in Africa face fragmented supply chains,limited market 
                     access, low financial inclusion, and inadequate digital tools. Over 2 in 3 farmers lack access to digital 
                     marketplaces, while women-led groups and youth entreprenuers remain excluded from finance and scalable opprtunities.
                 </p>
@@ -156,15 +156,89 @@
         </div>
     </section>
 
-    <section class="h-screen bg-black flex text-white flex-col lg:flex-row w-full py-[50px] p-2 lg:px-[100px]">
+    <section class="h-auto md:h-screen bg-black flex text-white flex-col lg:flex-row w-full py-[50px] p-2 lg:px-[100px]">
+    <div class="flex-1 mb-5 lg:mb-0 flex justify-center flex-col">
+        <div class="flex flex-col">
+            <small class="text-[#8dc32e]">// WHAT WE OFFER</small>
+            <h2 class="font-bold text-6xl mb-5 text-[#8dc32e]">Our Solution</h2>
+            <p style="max-width: 700px; line-height: 2rem;">Lliffton Analytica has developed a one-stop digital platform that intergrates agriculture, finance, and digital jobs to transform rural economies.</p>
+        </div>
+    </div>
+    <div class="flex-2 grid-cards flex items-center justify-center w-full">
+        <div class="flex flex-col md:grid md:grid-cols-6 md:grid-rows-6 gap-2 w-full">
+            <div class="card-wrapper md:col-span-2 md:row-span-3 md:col-start-2">
+                <div (click)="viewProject('/agri-trade')" class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Agri-Trade App</h2>
+                            <span>01</span>
+                        </div>
+                        <div class="card-back">
+                            <small>Real-time marketplace for inputs, services (e.g., mechanization, soil testing), and aggregation.</small>
+                            <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                            <span>01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper md:col-span-2 md:row-span-3 md:col-start-4">
+                <div (click)="viewProject('/vsla')" class="card">
+                    <div class="card-inner">
+                        <div class="card-front two">
+                            <h2>VSLA Digitization</h2>
+                            <span>02</span>
+                        </div>
+                        <div class="card-back">
+                            <small>End-to-end savings group mangament linked to mobile money</small>
+                            <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                            <span>02</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper md:col-span-2 md:row-span-3 md:col-start-2 md:row-start-4">
+                <div (click)="viewProject('/mis')" class="card">
+                    <div class="card-inner">
+                        <div class="card-front three">
+                            <h2>Market Infromation System (MIS)</h2>
+                            <span>03</span>
+                        </div>
+                        <div class="card-back">
+                            <small>Data Driven insights on 48 value chains with AI projections</small>
+                            <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                            <span>03</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper md:col-span-2 md:row-span-3 md:col-start-4 md:row-start-4">
+                <div (click)="viewProject('/e-group')" class="card">
+                    <div class="card-inner">
+                        <div class="card-front four">
+                            <h2>E-group & Digital Jobs Platform</h2>
+                            <span>04</span>
+                        </div>
+                        <div class="card-back">
+                            <small>Unlocking e-commerce opportunities and remote youth</small>
+                            <a href="#" class="flex gap-1"><i class="bi bi-arrow-right"></i>view more</a>
+                            <span>04</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- <section class="h-auto md:h-screen bg-black flex text-white flex-col lg:flex-row w-full py-[50px] p-2 lg:px-[100px]">
         <div class="flex-1 mb-5 lg:mb-0 flex justify-center flex-col">
             <div class="flex flex-col">
                 <small class="text-[#8dc32e]">// WHAT WE OFFER</small>
                 <h2 class="font-bold text-6xl mb-5 text-[#8dc32e]">Our Solution</h2>
-                <p style="max-width: 700px;">Lliffton Analytica has developed a one-stop digital platform that intergrates agriculture, finance, and digital jobs to transform rural economies.</p>
+                <p style="max-width: 700px; line-height: 2rem;">Lliffton Analytica has developed a one-stop digital platform that intergrates agriculture, finance, and digital jobs to transform rural economies.</p>
             </div>
         </div>
-        <div class="flex-2 flex items-center justify-center">
+        <div class="flex-2 grid-cards flex items-center justify-center">
             <div class="grid grid-cols-6 grid-rows-6 gap-2 w-full">
                 <div class="col-span-2 row-span-3 col-start-2">
                     <div (click)="viewProject('/agri-trade')" class="card">
@@ -182,7 +256,7 @@
                     </div>
                 </div>
                 <div class="col-span-2 row-span-3 col-start-4">
-                      <div (click)="viewProject('/vsla')" class="card">
+                    <div (click)="viewProject('/vsla')" class="card">
                         <div class="card-inner">
                             <div class="card-front two">
                                 <h2>VSLA Digitization</h2>
@@ -197,7 +271,7 @@
                     </div>
                 </div>
                 <div class="col-span-2 row-span-3 col-start-2 row-start-4">
-                      <div (click)="viewProject('/mis')" class="card">
+                    <div (click)="viewProject('/mis')" class="card">
                         <div class="card-inner">
                             <div class="card-front three">
                                 <h2>Market Infromation System (MIS)</h2>
@@ -228,5 +302,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </div>

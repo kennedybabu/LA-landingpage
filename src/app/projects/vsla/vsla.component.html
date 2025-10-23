@@ -12,7 +12,7 @@
                 <p>Village Savings and Loan Associations (VSLAs) are community-based financial groups where members pool savings and provide loans to each other. Traditionally managed with physical cash, lockboxes, and paper records.</p>
                 <p>Our digital VSLA platform transforms these groups with secure, transparent, and efficient digital financial management.</p>
                 <p>Members access their accounts via mobile phones, track transactions in real-time, and build formal credit histories that unlock access to banks, MFIs, and insurance products.</p>
-                <p>he platform integrates with mobile money (M-Pesa, Airtel Money) and formal banking systems, creating a bridge between informal community finance and the formal financial sector.</p>
+                <p>The platform integrates with mobile money (M-Pesa, Airtel Money) and formal banking systems, creating a bridge between informal community finance and the formal financial sector.</p>
                 <button (click)="showDialog()" class="py-3 px-5 border border-2 hover:cursor-pointer">Request Demo</button>
                 <p-dialog [(visible)]="visible" [modal]="true" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
                     <app-mail></app-mail>
@@ -108,13 +108,13 @@
     </div>
     
     <section class="w-full flex flex-col md:flex-row py-[30px] lg:px-[100px]">
-        <div class="w-full md:w-1/3 p-2 py-[30px]">
+        <div class="w-full md:flex-1 p-2 py-[30px]">
             <small class="font-bold mb-2">// CURIOUS?</small>
             <h2 class="font-bold text-3xl mb-4">How it works</h2>
         </div>
 
-        <div class="w-full md:w-2/3 py-[30px]">
-            <p-timeline [value]="events" class="w-full" align="left">
+        <div class="w-full md:flex-2 py-[30px]">
+            <p-timeline [value]="events" class="w-full" align="alternate">
                 <ng-template #content let-event>
                     <h3 class="font-bold">{{ event.title }}</h3>
                     <small>{{ event.subText }}</small>

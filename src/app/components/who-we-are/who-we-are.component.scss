@@ -7,15 +7,10 @@ div {
             background-position: center;
             width: 400px;
         }
-
-        // ul {
-        //     li {
-                
-        //     }
-        // }
     }
 
     .grid-temp {
+        background-color: #90e1efa0;
         .image-container {
             background-size: cover;
             background-position: center;            
@@ -112,98 +107,103 @@ div {
         }
     }
 
-
     .flex-1,
-    .flex-2 {
-        .grid {
-            .row-span-3,
-            .col-span-2 {
-                padding: 2px;
-            }
-
-            .col-span-2 {
-                aspect-ratio: 1!important;
-            }
-
-            .card {
-                width: 100%;
-                height: 100%;
-                transform-style: preserve-3d;
-                transition: all .5s ease;
-                position: relative;
-                perspective: 1000px;
-            }
-
-            .card-inner {
-                width: 100%;
-                height: 100%;
-                transform-style: preserve-3d;
-                transition: transform .5s ease;
-                position: relative;
-            }
-
-            .card:hover .card-inner {
-                transform: rotateY(180deg);
-                cursor: pointer;
-            }
-
-            .card-front,
-            .card-back {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                backface-visibility: hidden;
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                flex-direction: column;
-                text-align: center;
-
-                span {
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    font-size: 5rem;
-                    font-weight: bold;
-                    opacity: .3;
-                }
-
-                h2 {
-                    font-size: 24px;
-                    font-weight: bold;
-                    margin-bottom: .5rem;
-                }
-
-            }
-            
-            .card-front {
-                background-color: aquamarine;
-                background-image: url('./../../../assets/grp.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;             
-            
-            }
-
-            .card-front.two {
-                background-image: url('./../../../assets/team.jpg');
-            }
-
-             .card-front.three {
-                background-image: url('./../../../assets/product.jpg');
-            }
-
-            .card-front.four {
-                background-image: url('./../../../assets/produce.jpg');
-            }
-
-            .card-back {
-                padding: 1rem;
-                text-align: center;
-                background: #6F2DA8;
-                color: whitesmoke;
-                transform: rotateY(180deg);
-            }
+.flex-2 {
+    // Styles for both flex and grid containers
+    .card-wrapper {
+        padding: 2px;
+        
+        // Mobile: fixed height for cards
+        height: 300px;
+        
+        // Tablet and up: use aspect ratio
+        @media (min-width: 768px) {
+            aspect-ratio: 1 !important;
+            height: auto;
         }
     }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all .5s ease;
+        position: relative;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+
+    .card-inner {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform .5s ease;
+        position: relative;
+    }
+
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
+
+    .card-front,
+    .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 5rem;
+            font-weight: bold;
+            opacity: .3;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+    }
+    
+    .card-front {
+        background-color: aquamarine;
+        background-image: url('./../../../assets/grp.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;             
+    }
+
+    .card-front.two {
+        background-image: url('./../../../assets/team.jpg');
+    }
+
+    .card-front.three {
+        background-image: url('./../../../assets/product.jpg');
+    }
+
+    .card-front.four {
+        background-image: url('./../../../assets/produce.jpg');
+    }
+
+    .card-back {
+        padding: 1rem;
+        text-align: center;
+        background: #6F2DA8;
+        color: whitesmoke;
+        transform: rotateY(180deg);
+    }
+
+}
+
+
+
 }
