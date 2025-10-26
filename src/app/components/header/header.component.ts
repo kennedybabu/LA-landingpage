@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, inject } from '@angular/core';
 import { DrawerModule } from 'primeng/drawer';
 import { gsap } from 'gsap';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +16,7 @@ export class HeaderComponent implements AfterViewInit {
 
 
   @ViewChild('tray') tray!: ElementRef
+  private router = inject(Router)
 
   ngAfterViewInit(): void {
     gsap.timeline().
@@ -34,6 +35,11 @@ export class HeaderComponent implements AfterViewInit {
 
   toggleSideBar() {
     this.sideBarShowing = !this.sideBarShowing
+  }
+
+  viewWhatWeDo() {
+    this.router.navigate(['/']);
+    this.sideBarShowing = false;
   }
 
 }
