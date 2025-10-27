@@ -114,7 +114,9 @@ div {
         padding: 2px;
         
         // Mobile: fixed height for cards
-        height: 300px;
+        width: 270px;
+        height: 299px;
+        margin: 0 auto!important;
         
         // Tablet and up: use aspect ratio
         @media (min-width: 768px) {

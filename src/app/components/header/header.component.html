@@ -6,9 +6,9 @@
     <div class="flex items-center">
         <ul class="hidden md:flex items-center gap-5">
             <li routerLink="/">Home</li>
-            <li (click)="viewWhatWeDo()">What We do</li>
-            <li (click)="viewWhatWeDo()">Contact Us</li>
-            <li (click)="viewWhatWeDo()">About Us</li>
+            <li (click)="viewWhatWeDo('what-we-do')">What We do</li>
+            <li (click)="viewWhatWeDo('contact-us')">Contact Us</li>
+            <li (click)="viewWhatWeDo('about-us')">About Us</li>
         </ul>
         <div class="md:hidden">
             @if (sideBarShowing) {
@@ -24,10 +24,10 @@
 <p-drawer header="Lliffton" [(visible)]="sideBarShowing" position="right">
     <nav>
         <ul class="list-none flex flex-col">
-            <li class="my-2 w-full cursor-pointer hover:text-[]">Home</li>
-            <li (click)="viewWhatWeDo()" class="my-2 w-full cursor-pointer">What We Do</li>
-            <li (click)="viewWhatWeDo()" class="my-2 w-full cursor-pointer">Contact Us</li>
-            <li (click)="viewWhatWeDo()" class="my-2 w-full cursor-pointer">About Us</li>
+            <li (click)="viewWhatWeDo('/')" class="my-2 w-full cursor-pointer hover:text-[]">Home</li>
+            <li (click)="viewWhatWeDo('what-we-do')" class="my-2 w-full cursor-pointer">What We Do</li>
+            <li (click)="viewWhatWeDo('contact-us')" class="my-2 w-full cursor-pointer">Contact Us</li>
+            <li (click)="viewWhatWeDo('about-us')" class="my-2 w-full cursor-pointer">About Us</li>
         </ul>
     </nav>
 </p-drawer>

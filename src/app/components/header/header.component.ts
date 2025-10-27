@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, inject } from '@angular/core';
+import { Component, ViewChild, ElementRef,inject, AfterViewInit, Output, EventEmitter } from '@angular/core';
 import { DrawerModule } from 'primeng/drawer';
 import { gsap } from 'gsap';
 import { Router, RouterLink } from '@angular/router';
@@ -16,6 +16,7 @@ export class HeaderComponent implements AfterViewInit {
 
 
   @ViewChild('tray') tray!: ElementRef
+  @Output() scrollToSection = new EventEmitter<string>();
   private router = inject(Router)
 
   ngAfterViewInit(): void {
@@ -37,9 +38,10 @@ export class HeaderComponent implements AfterViewInit {
     this.sideBarShowing = !this.sideBarShowing
   }
 
-  viewWhatWeDo() {
+  viewWhatWeDo(sectionId: string) {
     this.router.navigate(['/']);
     this.sideBarShowing = false;
+    this.scrollToSection.emit(sectionId)
   }
 
 }
