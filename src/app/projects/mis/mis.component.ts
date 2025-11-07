@@ -11,6 +11,7 @@ interface EventItem {
 }
 @Component({
   selector: 'app-mis',
+  standalone: true,
   imports: [
     CountUpModule,
     Dialog,

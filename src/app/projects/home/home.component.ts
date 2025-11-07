@@ -5,6 +5,7 @@ import { PartnersComponent } from "../../components/partners/partners.component"
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [HeroSectionComponent, WhoWeAreComponent, PartnersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

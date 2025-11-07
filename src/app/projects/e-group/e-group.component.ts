@@ -12,6 +12,7 @@ interface EventItem {
 }
 @Component({
   selector: 'app-e-group',
+  standalone: true,
   imports: [
     CountUpModule,
     Dialog,

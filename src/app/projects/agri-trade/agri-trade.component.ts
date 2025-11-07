@@ -12,6 +12,7 @@ interface EventItem {
 }
 @Component({
   selector: 'app-agri-trade',
+  standalone: true,
   imports: [
     CountUpModule,
     Dialog,

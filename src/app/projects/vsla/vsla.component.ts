@@ -12,6 +12,7 @@ interface EventItem {
 
 @Component({
   selector: 'app-vsla',
+  standalone: true,
   imports: [
     CountUpModule,
     Dialog,
